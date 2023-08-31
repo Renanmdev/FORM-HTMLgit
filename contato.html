@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Formulario de contato</legend>
+
+      <form action="" autocomplete="off">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" autocomplete="off" />
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Digite um email valido"
+        />
+
+        <label for="subject">Assunto</label>
+        <input type="text" name="subject" id="subject" />
+
+        <label for="">Mensagem</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="7"
+          required
+          maxlength="1000"
+          minlength="1000"
+        ></textarea>
+        <input type="submit" class="btn" />
+      </form>
+    </fieldset>
+  </body>
+</html>
