@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
 
     <title>Login</title>
-  </head>
-  <body>
-    <fieldset>
-      <legend>Formulario de contato</legend>
 
-      <form action="" autocomplete="off">
+    <link rel="stylesheet" href="contatato.css" />
+  </head>
+
+  <body>
+    <form action="" autocomplete="off">
+      <fieldset>
+        <legend>Formulário de contato</legend>
+
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name" autocomplete="off" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Digite seu nome completo"
+        />
+
         <label for="email">E-mail</label>
         <input
           type="email"
           name="email"
           id="email"
           required
-          placeholder="Digite um email valido"
+          placeholder="Digite um email válido"
         />
 
         <label for="subject">Assunto</label>
-        <input type="text" name="subject" id="subject" />
+        <input type="text" id="subject" name="subject" />
 
-        <label for="">Mensagem</label>
+        <label for="message">Mensagem</label>
         <textarea
           name="message"
           id="message"
           rows="7"
           required
           maxlength="1000"
-          minlength="1000"
+          minlength="20"
+          placeholder="conte-nos tudo"
         ></textarea>
-        <input type="submit" class="btn" />
-      </form>
-    </fieldset>
+
+        <button type="submit" class="btn">Enviar</button>
+      </fieldset>
+    </form>
   </body>
 </html>
